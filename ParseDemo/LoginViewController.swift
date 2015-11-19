@@ -75,6 +75,18 @@ class LoginViewController: UIViewController {
         
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        /*
+        if let _ = touches.first {
+        self.view.endEditing(true)
+        }
+        */
+        
+        self.view.endEditing(true)
+        
+        super.touchesBegan(touches , withEvent:event)
+    }
+    
     /*
     // MARK: - Navigation
 
